@@ -116,26 +116,13 @@ section {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.add-li::before {
-  content: '';
-  display: flex;
-  height: 16px;
-  width: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+.add-li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-li .icon {
   margin-right: 10px;
-  color: var(--secondary-text-color);
-}
-.add-li:nth-child(1)::before {
-  background-image: url(../img/envelope.svg);
-  fill: currentColor;
-}
-.add-li:nth-child(2)::before {
-  background-image: url(../img/tel.svg);
-  fill: currentColor;
-}
-.add-li :hover::before {
-  fill: var(--accent-color);
 }
 /*герой*/
 .hero {
@@ -315,13 +302,30 @@ section {
   color: var(--social-link-color);
 }
 
-.social-link :hover,
-.social-link :focus {
-  color: var(--accent-color);
+.social-link .action {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+}
+.icon {
+  fill: currentColor;
+}
+.social-link .action:hover,
+.social-link .action:focus {
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .social-link li:not(:last-child) {
   margin-right: 10px;
 }
+/* .social-link :hover,
+.social-link :focus {
+  color: var(--accent-color);
+} */
 
 /*Постоянные клиенты*/
 .our-customer {
@@ -335,11 +339,17 @@ section {
 .customer-li {
   display: flex;
   align-items: center;
+  color: var(--social-link-color);
   justify-content: center;
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
   height: 90px;
   width: 170px;
+}
+.customer-list .customer-li:hover,
+.customer-list .customer-li:focus {
+  color: var(--accent-color);
+  border-color: solid var(--accent-color);
 }
 
 /*подвал*/
@@ -353,13 +363,14 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .cont-add {
-  padding-top: 45px;
-  padding-bottom: 28px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-right: 69px;
 }
 .foot-link {
   display: block;
-  padding-top: 57px;
+  padding-top: 72px;
+  padding-bottom: 100px;
   margin: 0px;
 }
 .foot-link .social-link {
@@ -373,7 +384,7 @@ section {
 }
 .main-logo-foot {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -412,11 +423,28 @@ b {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  color: var(--social-link-color);
 }
 .social-link-footer li:not(:last-child) {
   margin-right: 10px;
 }
+.social-link-footer .action-foot {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-link-footer .action-foot:hover,
+.social-link-footer .action-foot:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* .telega {
+  display: flex;
+} */
 .end {
   padding-top: 18px;
   padding-bottom: 21px;
