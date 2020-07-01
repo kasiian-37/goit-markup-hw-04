@@ -339,22 +339,30 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.customer-li {
-  display: flex;
-  align-items: center;
-  color: var(--social-link-color);
-  justify-content: center;
-  border: 1px solid var(--social-link-color);
-  border-radius: 4px;
+.customer-li a {
+  display: inline-flex;
   height: 90px;
   width: 170px;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--social-link-color);
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+  background-color: var(--primary-white-color);
 }
-.customer-list .customer-li:hover,
-.customer-list .customer-li:focus {
+.customer-li a:hover {
+  height: 90px;
+  width: 170px;
+  border-radius: 4px;
   color: var(--accent-color);
   border-color: solid var(--accent-color);
 }
-
+.customer-li a :focus {
+  border-radius: 4px;
+  color: var(--accent-color);
+  border-color: solid var(--accent-color);
+}
 /*подвал*/
 .foot {
   margin-top: 0px;
@@ -505,11 +513,15 @@ b {
   flex-wrap: wrap;
 }
 .project-elements {
+  display: flex;
+  justify-content: center;
   width: 370px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
   padding-bottom: 20px;
   margin-right: 30px;
 }
-
 .project-elements:nth-child(3n) {
   margin-right: 0px;
 }
