@@ -339,7 +339,7 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.customer-li a {
+.company {
   display: inline-flex;
   height: 90px;
   width: 170px;
@@ -349,20 +349,12 @@ section {
   color: var(--social-link-color);
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
-  background-color: var(--primary-white-color);
 }
-.customer-li a:hover {
-  height: 90px;
-  width: 170px;
-  border-radius: 4px;
+.customer-li .company :hover,
+.customer-li .company :focus {
   color: var(--accent-color);
-  border-color: solid var(--accent-color);
 }
-.customer-li a :focus {
-  border-radius: 4px;
-  color: var(--accent-color);
-  border-color: solid var(--accent-color);
-}
+
 /*подвал*/
 .foot {
   margin-top: 0px;
