@@ -248,6 +248,8 @@ section {
   width: 370px;
   height: 70px;
   margin: 0px;
+  position: absolute;
+  bottom: 0px;
 
   background: var(--secondary-background-color);
   color: var(--primary-white-color);
@@ -259,6 +261,9 @@ section {
 
 .work li:not(:last-child) {
   margin-right: 30px;
+}
+.work-li {
+  position: relative;
 }
 /*Наша команда*/
 .our-team {
@@ -325,10 +330,6 @@ section {
 .social-link li:not(:last-child) {
   margin-right: 10px;
 }
-/* .social-link :hover,
-.social-link :focus {
-  color: var(--accent-color);
-} */
 
 /*Постоянные клиенты*/
 .our-customer {
@@ -339,22 +340,24 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.customer-li {
+  display: flex;
+}
 .company {
   display: inline-flex;
-  height: 90px;
-  width: 170px;
   align-items: center;
   justify-content: center;
-
+  height: 90px;
+  width: 170px;
   color: var(--social-link-color);
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
 }
-.customer-li .company :hover,
-.customer-li .company :focus {
+.customer-li .company:hover,
+.customer-li .company:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
-
 /*подвал*/
 .foot {
   margin-top: 0px;
